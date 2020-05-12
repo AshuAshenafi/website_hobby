@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contact_form</title>
+    <link rel="stylesheet" type="text/css" href="styles\contact_style.css">
+
+</head>
+<body>
+
+
+<ul>
+    <li class="head_li"><a  href="home.html">Home</a></li>
+    <li class="head_li"><a href="reading.html">Reading</a></li>
+    <li class="head_li"><a href="exercise.html">Exercise</a></li>
+    <li class="head_li"><a href="charity.html">Charity</a></li>
+    <li class="head_li"><a class="active" href="#contact">Contact</a></li>
+    <li class="head_li"><a href="#news">News</a></li>
+    <li style="float:right" class="head_li"><a href="#about">About</a></li>
+</ul>
+<p>
+<h2>Contact Form</h2>
+</p>
+
+<div id="after_submit">
+
+<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+    <div class="row">
+        <label class="required" for="name">Your name:</label><br />
+        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+        <span id="name_validation" class="error_message"></span>
+    </div>
+    <div class="row">
+        <label class="required" for="email">Your email:</label><br />
+        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+        <span id="email_validation" class="error_message"></span>
+    </div>
+    <div class="row">
+        <label class="required" for="message">Your message:</label><br />
+        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+        <span id="message_validation" class="error_message"></span>
+    </div>
+
+    <input id="submit_button" type="submit" value="Send email" />
+</form>
+</div>
+
+</body>
+</html>
